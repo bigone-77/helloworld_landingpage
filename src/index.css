@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Prentendard", "sans-serif";
+  --color-text: "#000";
+  --color-yellow: "#FFCF33";
+  --color-purple: "#9747FF";
+
+  --gradient-bg-1: linear-gradient(to top, #ffe8a2, #ffffff);
+  --gradient-bg-2: linear-gradient(135deg, #a79afc, #7161d7);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-1 {
+    background: var(--gradient-bg-1);
+  }
+  .bg-gradient-2 {
+    background: var(--gradient-bg-2);
+  }
+}
